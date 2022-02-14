@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #2b78a2;
+}
+
+.container-title-db{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fas{
+    font-size: 75px;
+    color: #fff;
+}
+
+.title-db{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+.table{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+/*Media query para dispositivos móviles*/
+
+@media (max-width: 550px){
+
+/*Configuración de la tabla de contenido*/
+
+.table-title{
+    display: none;
+}
+
+.table tr{
+    display: flex;
+    flex-direction: column;
+}
+
+.table td[data-titulo]{
+    display: flex;
+    flex-direction: column;
+}
+
+.table td[data-titulo]::before{
+    content: attr(data-titulo);
+}
+
+}/*Finalización de media query*/
